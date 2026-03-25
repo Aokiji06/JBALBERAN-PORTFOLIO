@@ -503,6 +503,10 @@ button {
   margin-bottom: 2rem;
 }
 
+.task-actions {
+  margin-bottom: 1.6rem;
+}
+
 .task-description h2,
 .task-gallery h2 {
   margin-bottom: 0.9rem;
