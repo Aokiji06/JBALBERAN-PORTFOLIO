@@ -47,3 +47,14 @@ const setActiveLink = () => {
 
 window.addEventListener("scroll", setActiveLink);
 window.addEventListener("load", setActiveLink);
+
+const hero = document.querySelector(".hero");
+
+if (hero) {
+  window.addEventListener("mousemove", (event) => {
+    const x = (event.clientX / window.innerWidth - 0.5) * 18;
+    const y = (event.clientY / window.innerHeight - 0.5) * 18;
+    hero.style.setProperty("--nika-x", `${x}px`);
+    hero.style.setProperty("--nika-y", `${y}px`);
+  });
+}
